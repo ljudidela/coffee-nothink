@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cosmic Coffee Shop | Wake Up Among the Stars</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <canvas id="cosmos"></canvas>
+
+  <nav>
+    <div class="logo">COSMIC BREW ☕</div>
+    <div class="links">
+      <a href="#beans">Beans</a>
+      <a href="#recipes">Recipes</a>
+      <a href="#order">Order</a>
+    </div>
+  </nav>
+
+  <main>
+    <section id="hero">
+      <div class="hero-content">
+        <h1 class="glitch" data-text="MORNING ORBIT">MORNING ORBIT</h1>
+        <p>Experience the darkest roast in the galaxy with a sunrise finish.</p>
+        <button class="btn-glow" onclick="document.getElementById('order').scrollIntoView({behavior: 'smooth'})">Start Engine</button>
+      </div>
+    </section>
+
+    <section id="beans">
+      <div class="container">
+        <h2>Stardust Beans</h2>
+        <p>Harvested from asteroid belts, roasted in the heat of a supernova.</p>
+        <div class="cup-animation">
+          <div class="bean-stream"></div>
+          <div class="cup">
+            <div class="smoke"></div>
+            <div class="cup-body"></div>
+            <div class="cup-handle"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="recipes">
+      <div class="container">
+        <h2>Nebula Recipes</h2>
+        <div class="cards">
+          <div class="card" data-tilt>
+            <div class="icon">🌑</div>
+            <h3>Black Hole Espresso</h3>
+            <p>Infinite density, zero sugar.</p>
+          </div>
+          <div class="card" data-tilt>
+            <div class="icon">🪐</div>
+            <h3>Saturn Rings Latte</h3>
+            <p>Frothy milk layers with caramel dust.</p>
+          </div>
+          <div class="card" data-tilt>
+            <div class="icon">☄️</div>
+            <h3>Comet Cold Brew</h3>
+            <p>Iced perfection trailing mint flavor.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="order">
+      <div class="container">
+        <h2>Initiate Launch</h2>
+        <form id="launch-form">
+          <div class="input-group">
+            <input type="text" placeholder="Commander Name" required />
+          </div>
+          <div class="input-group">
+            <select>
+              <option>Select Fuel Type</option>
+              <option>Black Hole Espresso</option>
+              <option>Saturn Rings Latte</option>
+              <option>Comet Cold Brew</option>
+            </select>
+          </div>
+          <button type="submit" class="btn-launch">LAUNCH ORDER 🚀</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2024 Cosmic Coffee Shop. Universal Shipping Available.</p>
+  </footer>
+
+  <script type="module" src="./main.js"></script>
+</body>
+</html>
