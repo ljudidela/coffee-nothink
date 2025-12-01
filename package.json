@@ -1,0 +1,16 @@
+{
+  "name": "cosmic-coffee-shop",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "gsap": "^3.12.5",
+    "canvas-confetti": "^1.9.2"
+  },
+  "devDependencies": {
+    "vite": "^5.1.4"
+  }
+}
